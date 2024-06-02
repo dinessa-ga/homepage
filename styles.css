@@ -11,11 +11,11 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
-  --durability-text-color: #3d2b61;
+  --secondary-text-color: #302447;
+  --durability-text-color: #1c0e37;
   --icon-color: #6525e6;
   --border-color: #c3a5ff;
-  --text-decoration-color: #6b33db;
+  --text-decoration-color: #241249;
 }
 
 .container {
@@ -51,6 +51,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -276,23 +277,36 @@ body {
 
 
 
-.intro__icon__shinee{
+.intro__img__shinee {
   height: 4rem;
   vertical-align: text-bottom;
   margin-right: 1rem;
 }
 
-.intro__icon__arq{
+.intro__img__arq {
   height: 12rem;
- 
- 
   vertical-align: text-bottom;
   margin-right: 1rem;
-  
 }
 
-.extra__header {
+.intro__extra__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
+}
+
+.intro__extra {
+  display: flex;
+}
+
+@media screen and (width< 576px) {
+  .intro__extra {
+
+    flex-direction: column;
+  }
+
+  .intro__img__arq, .intro__img__shinee {
+    height: auto;
+    margin: 1rem;
+  }
 }
