@@ -297,6 +297,7 @@ body {
 
 .intro__extra {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (width< 576px) {
